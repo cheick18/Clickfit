@@ -30,4 +30,9 @@
     transform: translate(-50%,-50%);
     display: none;
   }
-  
+  @media screen and (max-width: 768px) {
+    .image-item-content{
+       
+        display: block;
+      }
+  }
