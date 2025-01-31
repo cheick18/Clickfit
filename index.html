@@ -245,7 +245,7 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
       <h1 class="hero-title">Welcome to Our Website!</h1>
       <p class="hero-description">Discover our amazing products and services to help you succeed, amazing products and
         services to help you succeed.</p>
-      <button type="button " class="btn contactbutton">Explore our service</button>
+     <a href="#services"> <button type="button " class="btn contactbutton">Explore our service</button></a>
       <div class="space" style="display:block;height: 30px;">
 
       </div>
@@ -366,15 +366,22 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
       <h4 class="">Uploade your image </h4>
       <div class="col">
 
-        <form id="imageUploadForm" method="POST" action="http://localhost:4000/api/users/upload"
-          enctype="multipart/form-data">
+        <form id="imageUploadForm" enctype="multipart/form-data"
+         >
 
           <input type="file" id="image" name="image" style="display: none;" accept="image/*" />
-
-
+          
+          <button type="button" id="uploadButton" class="btn btn-light">
+            <i class="fas fa-upload"></i> Upload Image
+          </button>
+        
+<!--
           <label for="image" class="upload-icon">
             <i class="fas fa-upload text-light"></i>
           </label>
+        -->
+
+
           <div id="imageName"></div>
         </form>
 
@@ -388,10 +395,10 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
   <!--Contact section-->
   <section class="container-fluid" id="contat-section">
     <div class="row ">
-      <div class="contact-form col-md-6 col-xs-12  order-sm-2">
+      <div class="contact-form col-md-6 col-xs-12  order-2">
         <div class="row">
-          <div class="col-md-10 col-xs-12 shadow-sm p-5">
-            <h3 class="">Contact us now</h3>
+          <div class="col-md-10 col-xs-12 shadow-sm p-5 conact-form-input-container">
+            <h3 class="conact-f">Contact us now</h3>
             <p style="padding-block-start: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
               quae! Ea in adipisci inventore, similique qui quidem, rem eItaque, aspernatur.</p>
 
@@ -399,22 +406,23 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
               <div class="mb-4">
 
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Name">
+                  placeholder="Name *" required>
               </div>
               <div class="mb-4">
 
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Email address">
+                  placeholder="Email address *" required>
+              </div>
+              <div class="mb-4">
+
+
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Phone number *" required>
               </div>
               <div class="mb-4">
 
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Phone number">
-              </div>
-              <div class="mb-4">
-
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Message">
+                  placeholder="Message *">
               </div>
 
               <button type="submit" class="btn btn-danger registration-button">Submit</button>
@@ -424,7 +432,7 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
         </div>
 
       </div>
-      <div class="contact-image col-md-6 col-xs-12  order-sm-1">
+      <div class="contact-image col-md-6 col-xs-12   order-1">
         <div class="row contact-image-contain">
           <div class="col-md-10 col-md-6 shadow-md p-5" style=" background-color:#e74c3c;">
             <img src="https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
@@ -489,11 +497,13 @@ https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="/assets/js/fectchApi.js"></script>
   <script src="/assets/js/uploadImage.js"></script>
   <script src="/assets/js/animation.js"></script>
   <script src="/assets/js/servicesDetails.js"></script>
   <script src="/assets/js/userRegistration.js"></script>
+
 
 </body>
 

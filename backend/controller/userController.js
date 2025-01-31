@@ -28,8 +28,5 @@ export const uploadImage = (req, res) => {
   if (!req.file) {
     return res.status(400).send('No file uploaded');
   }
-  res.send({
-    message: 'Image uploaded successfully',
-    file: req.file
-  });
+  res.status(201).json({ success:true,data: result });
 };

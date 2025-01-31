@@ -7,7 +7,7 @@ const router= express.Router();
 router.post('/api/users', addUser);
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'uploads/'); 
+    cb(null, 'upload_images/'); 
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + path.extname(file.originalname));

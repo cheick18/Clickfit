@@ -11,3 +11,10 @@
     right: 0;
   
   }
+  @media screen and (max-width: 768px) {
+    .conact-form-input-container {
+       position: relative;
+        top: 308px;
+      }
+  }
+  

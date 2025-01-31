@@ -13,8 +13,11 @@ $(document).ready(function() {
   
       $('.hero').css('background-position', positionX + 'px 0');
     }
-  
-    setInterval(moveBackground, 16);
+    if (window.innerWidth > 768) {
+      setInterval(moveBackground, 16);
+    }
+   
+
     $('.hero-title').fadeIn(1000); 
   
   
