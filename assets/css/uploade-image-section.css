@@ -1,0 +1,26 @@
+
+.uploade-image-section{
+    position: relative;
+    background-color:var(--text-primary-color);
+    display: block;
+    height: 40vh;
+  
+   
+  }
+  .uploade-image-section .uploade-image-section-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   color: var(--white-color);
+    text-align: center;
+  }
+  
+  .upload-icon i{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  

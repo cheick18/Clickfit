@@ -1,0 +1,13 @@
+#contat-section .row{
+    height: 100%;
+  }
+  
+  .contact-image-contain {
+    position: relative;
+  
+  }
+  .contact-image-contain .col-md-10{
+    position: absolute;
+    right: 0;
+  
+  }

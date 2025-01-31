@@ -1,0 +1,113 @@
+.navbar-nav .nav-item .nav-link {
+    display: inline-block; 
+    position: relative;
+    padding-bottom: 5px; 
+  } 
+  .navbar-nav .nav-item .nav-link::after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 0%; 
+    height: 2px; 
+    background-color:var(--primary-color); 
+    transition: width 0.3s ease; 
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%; 
+  }
+  
+
+.logo-wrapper{
+      
+  padding: 5px 0px;
+  
+
+}
+ .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+
+  font-size: 2rem;
+
+}
+
+.logo .click {
+  color: var(--primary-color); /* Bleu pour 'Click' */
+  margin-right: 10px;
+}
+
+.logo .fit {
+ color:var(--text-secondary-color); /* Vert pour 'Fit' */
+
+
+}
+
+.logo .icon {
+  font-size: 1.5rem;
+  margin-left: 15px;
+
+
+  transition: transform 0.3s ease;
+}
+
+.logo .icon:hover {
+  transform: rotate(10deg);
+}
+html body .login-button{
+  border: none;
+border-color: var(--secondary-color);
+color: var(--secondary-color);
+}
+html body .login-button:hover{
+
+border-color: var(--secondary-color);
+color: var(--white-color);
+background-color: var(--secondary-color);
+}
+.container-registration-button{
+  margin-left: 10px;
+}
+
+html body  .registration-button{
+ background-color: var(--primary-color);
+ border-color: var(--primary-color);
+}
+html body  .registration-button:hover{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border: none;
+ }
+ html body  .registration-button:active{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border: none;
+ }
+
+.socialnetwork i{
+color: var(--secondary-color);
+font-size: 20px;
+
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container-registration-button{
+      margin-left: 0;
+    
+    }
+    .socialnetwork{
+       padding-top: 16px;
+        display: flex;
+        flex-direction: row!important;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}

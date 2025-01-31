@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-image: url('https://images.pexels.com/photos/22814550/pexels-photo-22814550/free-photo-of-noir-et-blanc-homme-parc-veste.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    
+    background-size: cover;
+
+    background-position: center;
+    color: var(--background-color);
+    display: flex;
+    align-items: end;
+
+}
+
+.hero-title,
+.hero-description {
+    color: var(--white-color);
+}
+
+.hero-title {
+
+    margin-bottom: 20px;
+
+}
+
+.contactbutton {
+    color: var(--white-color) !important;
+    background: var(--primary-color) !important;
+}
+
+.hero-title,
+.hero-description,
+.hero button {
+    display: none;
+}
+
+.space-between {
+    display: block;
+    height: 92px;
+}

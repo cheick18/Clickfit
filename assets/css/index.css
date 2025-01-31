@@ -1,0 +1,63 @@
+
+/* Définition des variables CSS pour les couleurs */
+:root {
+  --primary-color: #EB4038;  
+
+  --secondary-color: #e74c3c;   
+  --white-color: #ffffff;
+  --text-primary-color: #352E2E; 
+  --text-secondary-color: #9A9696; 
+       
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+     color: var(--background-color) ;
+  
+
+  }
+  html body button, html body .nav-link {
+    font-family: 'Roboto', sans-serif;  /* S'assure que les boutons et les liens auront Roboto */
+}
+html body .container-fluid{
+  padding-left: 4%;
+  padding-right: 4%;
+
+}
+
+  h1{
+ font-size: 127.88px;
+ color: var(--white-color);
+  }
+  h2{
+    font-size: 39.81px;
+  }h3{
+
+  }h4{
+font-size: 45px;
+  }h5{
+    font-size: 31.99px;
+    color: var(--text-secondary-color);
+  } p{
+    font-size: 16px;
+    color: var(--text-secondary-color);
+  }
+/*
+@media screen and (max-width: 768px) {
+
+  .description-section{
+    height: auto;
+  }
+  .description-section-text{
+    padding-top: 24px;
+
+  }
+  .description-section-text h4{
+    text-align: center;
+  }
+}
+*/

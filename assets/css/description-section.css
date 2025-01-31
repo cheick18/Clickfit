@@ -1,0 +1,37 @@
+.description-section{
+    height: 458px; 
+  }
+  .image-background{
+    border-radius: 16px;
+    opacity: 1;
+    background-color: black;
+  }
+  .description-section-image img{
+    border-radius: 16px;
+    height: 438px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  .description-section-image img:hover{
+    border-radius: 16px;
+    opacity: 0.4;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  .description-section-text {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 768px) {
+
+    .description-section{
+      height: auto;
+    }
+    .description-section-text{
+      padding-top: 24px;
+  
+    }
+    .description-section-text h4{
+      text-align: center;
+    }
+  }
