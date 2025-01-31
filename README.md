@@ -10,7 +10,7 @@ ClickFit is a showcase website dedicated to fitness, offering specialized servic
 ## Description Section
 ![Here is the screenshot of the description section](/Screenshots/description-section.png)
 ## Carousel Section
-![Here is the screenshot of the description section](/Screenshots/description-section.png)
+![Here is the screenshot of the description section](/Screenshots/carousel-section.png)
 ## History Text Section
 ![Here is the screenshot of the history text section](/Screenshots/history-text-section.png)
 ## Services Section
